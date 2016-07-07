@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+import byeBye from './components/ByeBye.vue'
+import hello from './components/Hello.vue'
 
-/* eslint-disable no-new */
-new Vue({
-  el: 'body',
-  components: { App }
-})
+let comps = {
+  byeBye,
+  hello
+}
+export default comps
+

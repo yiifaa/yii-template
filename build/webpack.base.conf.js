@@ -5,7 +5,7 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './docs/main.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -18,27 +18,32 @@ module.exports = {
     alias: {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components')
+      'components': path.resolve(__dirname, '../src/components'),
+	  "bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css',	
+      "syntaxhighlighter.js" : projectRoot + '/docs/libs/syntaxhighlighter.js',
+      "syntaxhighlighter.css" : projectRoot + '/docs/libs/syntaxhighlighter.css',
     }
   },
   resolveLoader: {
     fallback: [path.join(__dirname, '../node_modules')]
   },
   module: {
+	/****/
     preLoaders: [
       {
         test: /\.vue$/,
         loader: 'eslint',
         include: projectRoot,
-        exclude: /node_modules/
+        exclude: [/node_modules/, /docs/]
       },
       {
         test: /\.js$/,
         loader: 'eslint',
         include: projectRoot,
-        exclude: /node_modules/
+        exclude: [/node_modules/, /docs/]
       }
     ],
+	
     loaders: [
       {
         test: /\.vue$/,
@@ -81,12 +86,5 @@ module.exports = {
   },
   vue: {
     loaders: utils.cssLoaders()
-  },
-
-  resolve: {
-		alias: {
-			"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css',
-			"images"        : projectRoot + '/static/images'	
-		}
-	}
+  }
 }

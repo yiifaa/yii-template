@@ -1,5 +1,5 @@
 <template>
-  <H1>Hello,{{username}}</H1>
+  <H1>byebye,{{username}}</H1>
 </template>
 
 <script>
