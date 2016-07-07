@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeafadd-f3de-40b2-85de-00e94c812007" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/App.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ByeBye.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/libs/syntaxhighlighter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/libs/syntaxhighlighter.js" />
-      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\src\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\src\App.vue" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Hello.vue" afterPath="$PROJECT_DIR$/src/components/Hello.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="yii-template.iws" />
     <ignored path=".idea/workspace.xml" />

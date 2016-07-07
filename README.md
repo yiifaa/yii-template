@@ -102,8 +102,57 @@ import App from './App.vue'
     app: './src/main.js'
   }
 #
-
 ```
+
+## 文档语法高亮
+``` javascript
+# 用法1
+<script type="text/syntaxhighlighter" class="brush: js">
+<![CDATA[
+function foo() {
+  if (counter <= 10)
+      return;
+  // it works!
+}
+]]>
+</script>
+
+# 用法2
+<pre class="brush: js">
+function foo() {
+}
+</pre>
+
+# 用法3
+``` css
+<pre class="brush: css;">
+   h1.container {
+	height : 100px;
+	font-size : 12px;
+    }
+</pre>
+```
+
+# 用法4
+``` sass
+<pre class="brush: sass;">
+   h1.container {
+	height : 100px;
+	font-size : 12px;
+    }
+</pre>
+```
+
+# 用法4
+``` html
+<pre class="brush: xml;">
+  <form id="mainform" onsubmit="return false">
+      <label for="input-number">Temperature</label>
+      <input name="input-number" id="input-number" type="number" step="any">
+  </form>
+</pre>
+```
+
 
 
 ## 生产模式
