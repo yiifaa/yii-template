@@ -39,22 +39,6 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css"//错误
 
 ```
 
-##关于别名与文件名的引用
-``` javascript
-# 别名，可精确到文件地址，并能支持带后缀的键值
- resolve: {
-	alias: {
-		"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css'
-	}
- }
-# 文件名引用，尽可能带上后缀，能大量减少编译错误
-import App from './App.vue'
-  
-```
-
-## 生产模式
-> 生产模式下会把所有的文件都打包到dist目录下，包括CSS、JS以及应用的相关图片，生成应用的绝对地址都会指向根目录，可通过webpack进行修改。
-
 ## 静态资源
 ``` html
 # 与vue文件放在一起，直接引用
@@ -72,6 +56,22 @@ import App from './App.vue'
 <!-- 不会发生变化，目标代码与当前代码一模一样 -->
 <img src="/1.jpg"></img>
 ```
+
+## 别名与引用的组件
+``` javascript
+# 别名，可精确到文件地址，并能支持带后缀的键值
+ resolve: {
+	alias: {
+		"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css'
+	}
+ }
+# 引用的组件时，尽可能带上后缀，能大量减少编译错误
+import App from './App.vue'
+  
+```
+
+## 生产模式
+> 生产模式下会把所有的文件都打包到dist目录下，包括CSS、JS以及应用的相关图片，生成应用的绝对地址都会指向根目录，可通过webpack进行修改。
 
 
 ##使用的相关技术
