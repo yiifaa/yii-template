@@ -24,8 +24,17 @@ npm run e2e
 npm test
 ```
 
+## 对CSS、SASS的支持
+``` html
+# 外部样式的引用
+<style src="../node_modules/bootstrap/dist/css/bootstrap.css"></style>
+
+```
+
 ##使用的相关技术
 <ol>
 <li>Webpack:http://vuejs-templates.github.io/webpack/</li>
 <li>vue-loader:http://vuejs.github.io/vue-loader</li>
 </ol>
+
+
