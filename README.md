@@ -116,13 +116,11 @@ function foo() {
 }
 ]]>
 </script>
-
 # 用法2
 <pre class="brush: js">
 function foo() {
 }
 </pre>
-
 # 用法3
 ``` css
 <pre class="brush: css;">
@@ -132,7 +130,6 @@ function foo() {
     }
 </pre>
 ```
-
 # 用法4
 ``` sass
 <pre class="brush: sass;">
@@ -142,8 +139,7 @@ function foo() {
     }
 </pre>
 ```
-
-# 用法4
+# 用法5
 ``` html
 <pre class="brush: xml;">
   <form id="mainform" onsubmit="return false">
