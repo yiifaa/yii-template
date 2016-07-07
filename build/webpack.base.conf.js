@@ -85,7 +85,8 @@ module.exports = {
 
   resolve: {
 		alias: {
-			"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css'
+			"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css',
+			"images"        : projectRoot + '/static/images'	
 		}
 	}
 }
