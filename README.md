@@ -8,7 +8,7 @@
 # 安装依赖
 npm install
 
-# 启动热加载服务，访问地址http://localhost:8080
+# 启动热加载服务，访问地址http://localhost:8080, 默认会调用档目录下的main.js
 npm run dev
 
 # 在生产模式下构建项目，内容包括代码校验、压缩以及混淆，
@@ -60,15 +60,51 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css"//错误
 ## 别名与引用的组件
 ``` javascript
 # 别名，可精确到文件地址，并能支持带后缀的键值
+/*在build/webpack.base.conf.js文件中定义*/
  resolve: {
 	alias: {
 		"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css'
 	}
  }
 # 引用的组件时，尽可能带上后缀，能大量减少编译错误
-import App from './App.vue'
-  
+import App from './App.vue' 
 ```
+
+##Eslint,默认启用,要求较为严格，可关闭
+``` javascript
+/*在build/webpack.base.conf.js文件中定义，注释下面这段代码即可关闭*/
+ preLoaders: [
+      {
+        test: /\.vue$/,
+        loader: 'eslint',
+        include: projectRoot,
+        exclude: [/node_modules/, /docs/]
+      },
+      {
+        test: /\.js$/,
+        loader: 'eslint',
+        include: projectRoot,
+        exclude: [/node_modules/, /docs/]
+      }
+    ],
+```
+
+## 文档与组件
+``` javascript
+# 文档放置在docs文件夹下，承担了两部分的任务，一方面担任DEMO演示，一方面担任使用说明
+  entry: {
+    app: './docs/main.js'
+  }
+
+# 组件放置在src文件夹下，一般用于技术研究与自定义组件
+  /*只需要单独发布组件时，需要将app指向为src目录，如下*/
+  entry: {
+    app: './src/main.js'
+  }
+#
+
+```
+
 
 ## 生产模式
 > 生产模式下会把所有的文件都打包到dist目录下，包括CSS、JS以及应用的相关图片，生成应用的绝对地址都会指向根目录，可通过webpack进行修改。
