@@ -26,10 +26,32 @@ npm test
 
 ## 对CSS、SASS的支持
 ``` html
-# 外部样式的引用
+# 外部样式的引用，在vue文件中直接输入
 <style src="../node_modules/bootstrap/dist/css/bootstrap.css"></style>
 
+# 对SASS的支持，在vue文件直接引用
+<style lang="sass">
+  /* write sass here */
+</style>
+
+# 在JS中直接引入CSS文件,暂不支持
+import "../node_modules/bootstrap/dist/css/bootstrap.css"//错误
+
 ```
+
+##关于别名与文件名的引用
+``` javascript
+# 别名，可精确到文件地址，并能支持带后缀的键值
+ resolve: {
+	alias: {
+		"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css'
+	}
+ }
+# 文件名引用，尽可能带上后缀，能大量减少编译错误
+import App from './App.vue'
+  
+```
+
 
 ##使用的相关技术
 <ol>

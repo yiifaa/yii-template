@@ -81,5 +81,11 @@ module.exports = {
   },
   vue: {
     loaders: utils.cssLoaders()
-  }
+  },
+
+  resolve: {
+		alias: {
+			"bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css'
+		}
+	}
 }

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Hello from './components/Hello.vue'
 
 export default {
   components: {
@@ -17,4 +17,4 @@ export default {
   }
 }
 </script>
-<style src="../node_modules/bootstrap/dist/css/bootstrap.css"></style>
+<style src="bootstrap.css"></style>
