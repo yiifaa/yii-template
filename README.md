@@ -158,14 +158,15 @@ function foo() {
 4.Safari 6.1+
 5.IE 10+
 
-## 最小分辨率支持 1024 * 768
+## 最小分辨率支持
+> 1024 * 768
 
 ##使用的相关技术
-1.[Webpack](http://vuejs-templates.github.io/webpack/)
-2.[vue-loader](http://vuejs.github.io/vue-loader)
-3.[vue](http://cn.vuejs.org/)
-4.[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)
-5.[bootstrap](http://getbootstrap.com/)
+1.[Webpack](http://vuejs-templates.github.io/webpack/)<br/>
+2.[vue-loader](http://vuejs.github.io/vue-loader)<br/>
+3.[vue](http://cn.vuejs.org/)<br/>
+4.[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)<br/>
+5.[bootstrap](http://getbootstrap.com/)<br/>
 
 
 
