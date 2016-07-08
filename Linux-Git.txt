@@ -1,0 +1,31 @@
+Linux git客户端连接教程
+======================
+## 1. 创建SSH证书
+> 输入如下命令，email地址输入自己的github注册邮箱
+``` bash
+ssh-keygen -t rsa -b 4096 -C "xxx@example.com"
+```
+在此过程中，命令交互信息首先会要求你确认文件名称与存放地址，点击回车即可;然后会要求你输入passphrase，随便输入一个即可，也可以不输入。
+
+## 2. 将SSH证书添加SSH客户端
+> 如果之前修改了文件存放路径，则输入修改后的存放路径，默认路径为~/.ssh/id_rsa
+``` bash
+ssh-add ~/.ssh/id_rsa
+```
+在此过程中，输入之前的passphrase，点击回车确认，即可操作完成。
+
+## 3. 将SSH证书添加github账户
+> 登录github，在账户的Settings中点击“SSH and GPG keys",然后再点击"New SSH key",在标题中输入证书的描述信息，在Key中输入SSH证书文件中的内容，点击"Add SSH key"就能完成操作。
+> 获取证书文件内容的方法如下：
+``` bash
+cat ~/.ssh/id_rsa
+```
+
+## 4. 测试证书是否创建成功
+> 如果显示欢迎信息，则表示操作成功，否则失败。
+``` bash
+ssh -T git@github.com
+```
+
+## 5. 下载代码
+> 第4步如果提示成功，即可下载代码，否则把流程重做一遍吧。
