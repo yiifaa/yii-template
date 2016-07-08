@@ -67,7 +67,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css"//错误
 	}
  }
 # 引用的组件时，尽可能带上后缀，能大量减少编译错误
-import App from './App.vue' 
+import App from './App.vue'
 ```
 
 ##Eslint,默认启用,要求较为严格，可关闭
@@ -148,16 +148,24 @@ function foo() {
 </pre>
 ```
 
-
-
 ## 生产模式
 > 生产模式下会把所有的文件都打包到dist目录下，包括CSS、JS以及应用的相关图片，生成应用的绝对地址都会指向根目录，可通过webpack进行修改。
 
+## 浏览器支持
+1.Chrome 21+
+2.Opera 12.1+
+3.Firefox 22+
+4.Safari 6.1+
+5.IE 10+
+
+## 最小分辨率支持 1024 * 768
 
 ##使用的相关技术
-<ol>
-<li>Webpack:http://vuejs-templates.github.io/webpack/</li>
-<li>vue-loader:http://vuejs.github.io/vue-loader</li>
-</ol>
+1.[Webpack](http://vuejs-templates.github.io/webpack/)
+2.[vue-loader](http://vuejs.github.io/vue-loader)
+3.[vue](http://cn.vuejs.org/)
+4.[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)
+5.[bootstrap](http://getbootstrap.com/)
+
 
 
