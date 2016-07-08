@@ -152,10 +152,10 @@ function foo() {
 > 生产模式下会把所有的文件都打包到dist目录下，包括CSS、JS以及应用的相关图片，生成应用的绝对地址都会指向根目录，可通过webpack进行修改。
 
 ## 浏览器支持
-1.Chrome 21+
-2.Opera 12.1+
-3.Firefox 22+
-4.Safari 6.1+
+1.Chrome 21+<br/>
+2.Opera 12.1+<br/>
+3.Firefox 22+<br/>
+4.Safari 6.1+<br/>
 5.IE 10+
 
 ## 最小分辨率支持
@@ -166,7 +166,7 @@ function foo() {
 2.[vue-loader](http://vuejs.github.io/vue-loader)<br/>
 3.[vue](http://cn.vuejs.org/)<br/>
 4.[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)<br/>
-5.[bootstrap](http://getbootstrap.com/)<br/>
+5.[bootstrap](http://getbootstrap.com/)
 
 
 
