@@ -3,6 +3,10 @@
 </template>
 
 <script>
+  /**
+   *  @class Hello 提示欢迎信息
+   *  @desc 输出欢迎功能
+   */
   export default {
     props: {
       username: {
