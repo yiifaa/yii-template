@@ -2,13 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeafadd-f3de-40b2-85de-00e94c812007" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BUILD-TASK.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/jsdoc.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Hello.vue" afterPath="$PROJECT_DIR$/src/components/Hello.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/webpack.prod.conf.js" afterPath="$PROJECT_DIR$/build/webpack.prod.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Bold-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Bold-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-BoldItalic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-BoldItalic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-BoldItalic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Italic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Italic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Italic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Light-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Light-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-LightItalic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-LightItalic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-LightItalic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\fonts\OpenSans-Regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\scripts\linenumber.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\scripts\prettify\Apache-License-2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\scripts\prettify\lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\scripts\prettify\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\styles\jsdoc-default.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\styles\prettify-jsdoc.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\yii-repo\yii-template\out\styles\prettify-tomorrow.css" afterPath="" />
     </list>
     <ignored path="yii-template.iws" />
     <ignored path=".idea/workspace.xml" />
