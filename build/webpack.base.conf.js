@@ -1,17 +1,45 @@
 var path = require('path')
+var webpack = require('webpack')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
+  plugins: [
+
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
+  /**
+    new webpack.optimize.CommonsChunkPlugin({
+      name       : "vendor",
+      filename  : "vendor.js",
+      minChunks : Infinity
+    })
+   **/
+  ],
+
   entry: {
-    app: './src/main.js'
+    /**
+     * 在需要打包组件系统时，将此处改为./src/main.js
+     */
+    //app: './src/main.js'
+    vendor: ["jquery"],
+    app: './docs/main.js'
   },
   output: {
     path: config.build.assetsRoot,
     publicPath: config.build.assetsPublicPath,
     filename: '[name].js'
   },
+  /**
+  externals: {
+    // require("jquery") is external and available
+    //  on the global var jQuery
+    "jquery": "jQuery"
+  },
+**/
   resolve: {
     extensions: ['', '.js', '.vue'],
     fallback: [path.join(__dirname, '../node_modules')],
@@ -22,7 +50,8 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components'),
-	  "bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css',	
+	  "bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css',
+      //"jquery"         : projectRoot + '/node_modules/jquery/dist/jquery.js',
       "syntaxhighlighter.js" : projectRoot + '/docs/libs/syntaxhighlighter.js',
       "syntaxhighlighter.css" : projectRoot + '/docs/libs/syntaxhighlighter.css',
     }

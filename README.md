@@ -8,7 +8,7 @@
 # 安装依赖
 npm install
 
-# 启动热加载服务，访问地址http://localhost:8080, 默认会调用档目录下的main.js
+# 启动热加载服务，访问地址http://localhost:8080, 默认会调用docs目录下的main.js
 npm run dev
 
 # 在生产模式下构建项目，内容包括代码校验、压缩以及混淆，
