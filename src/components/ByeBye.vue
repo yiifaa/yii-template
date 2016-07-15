@@ -1,9 +1,11 @@
 <template>
-  <div class="panel panel-default"></div>
+  <div class="panel panel-default" style="height : 480px;"></div>
 </template>
 
 <script>
-  //  import $ from 'jquery'
+  //  import $ from '../assets/jquery-vendor.js'
+  import $ from 'expose?$!jquery'
+  import 'highcharts'
   export default {
     props: {
       username: {
@@ -19,10 +21,10 @@
     methods: {
 
       renderChart () {
-        let $ = window.$
-        $(this.$el).html(this.username)
+        //  $(this.$el).html(this.username)
         /**
         Highcharts($)
+         **/
         $(this.$el).highcharts({
           title: {
             text: 'Monthly Average Temperature',
@@ -69,7 +71,6 @@
             data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
           }]
         })
-         **/
       }
     }
 

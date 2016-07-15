@@ -6,11 +6,12 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
   plugins: [
-
+    /**
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
     }),
+     **/
   /**
     new webpack.optimize.CommonsChunkPlugin({
       name       : "vendor",
@@ -25,7 +26,7 @@ module.exports = {
      * 在需要打包组件系统时，将此处改为./src/main.js
      */
     //app: './src/main.js'
-    vendor: ["jquery"],
+    //vendor: ["jquery"],
     app: './docs/main.js'
   },
   output: {
@@ -60,7 +61,7 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')]
   },
   module: {
-	/****/
+	/** **/
     preLoaders: [
       {
         test: /\.vue$/,
@@ -75,8 +76,13 @@ module.exports = {
         exclude: [/node_modules/, /docs/]
       }
     ],
-	
+
     loaders: [
+      /*导入全局jQuery*/
+      {
+        test: require.resolve('jquery'),
+        loader: 'expose?jQuery!expose?$'
+      },
       {
         test: /\.vue$/,
         loader: 'vue'
