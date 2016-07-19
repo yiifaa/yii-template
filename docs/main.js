@@ -2,7 +2,7 @@ import VueI18n from 'vue-i18n'
 import locales from './i18n/locales.js'
 import Vue from 'vue'
 import App from './App.vue'
-
+import 'syntaxhighlighter.js'
 //使用国际化文件
 let app = {
 

@@ -6,12 +6,11 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
   plugins: [
-    /**
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    }),
-     **/
+/*    new webpack.ProvidePlugin({
+      d3: "jquery",
+      $: "jquery"
+    }),*/
+
   /**
     new webpack.optimize.CommonsChunkPlugin({
       name       : "vendor",
@@ -53,6 +52,7 @@ module.exports = {
       'components': path.resolve(__dirname, '../src/components'),
 	  "bootstrap.css" : projectRoot + '/node_modules/bootstrap/dist/css/bootstrap.css',
       //"jquery"         : projectRoot + '/node_modules/jquery/dist/jquery.js',
+      //"d3":  projectRoot + '/node_modules/d3/build/d3.js',
       "syntaxhighlighter.js" : projectRoot + '/docs/libs/syntaxhighlighter.js',
       "syntaxhighlighter.css" : projectRoot + '/docs/libs/syntaxhighlighter.css',
     }
